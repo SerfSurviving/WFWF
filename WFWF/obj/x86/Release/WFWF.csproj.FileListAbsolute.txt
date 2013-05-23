@@ -1,0 +1,6 @@
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\WFWF.WFWF.resources
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\WFWF.Properties.Resources.resources
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\WFWF.WFWF.en.resources
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\GenerateResource.write.1.tlog

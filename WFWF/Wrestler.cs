@@ -17,7 +17,7 @@ namespace WFWF
     struct modifier : modifierInterface
     {
         // Constants
-        private static const string NOSKILL = "NOSK";
+        private static string NOSKILL = "NOSK";
 
         // C# properties
         private string __minAtt;
@@ -107,8 +107,8 @@ namespace WFWF
     struct experience : experienceInterface
     {
         // Constants
-        private static const byte expToLevel = 100;
-        private static const byte maxLevel = 100;
+        private static byte expToLevel = 100;
+        private static byte maxLevel = 100;
 
         // C# properties
         private byte __level;
@@ -186,7 +186,7 @@ namespace WFWF
     struct bodypart : bodypartInterface
     {
         // Consts
-        private static const int baseChance = 75;
+        private static int baseChance = 75;
         private static Random rand = new Random();
 
         // C# Properties
@@ -376,7 +376,7 @@ namespace WFWF
         /// <returns>
         /// Copy of the body parts belonging to the wrestler
         /// </returns>
-        public experience getBodyPart(string key)
+        public bodypart getBodyPart(string key)
         {
             bool hasKey = __wrestlingSkills.ContainsKey(key);
             Trace.Assert(hasKey, String.Format(

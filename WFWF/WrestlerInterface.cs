@@ -5,43 +5,41 @@ using System.Text;
 
 namespace WFWF
 {
-    private enum rating { C = 1, B, A, S };
+    enum rating { C = 1, B, A, S };
     interface modifierInterface
     {
-        public string minAtt { get; }
-        public string maxAatt { get; }
-        public string[] skillMods { get; }
+        string minAtt { get; }
+        string maxAtt { get; }
+        string[] skillMods { get; }
     }
     interface attributeInterface
     {
-        public rating aptitude { get; }
+        rating aptitude { get; }
     }
     interface experienceInterface
     {
-        public rating level { get; }
+        byte level { get; }
 
-        public byte exp { get; }
-        public void addExp(byte total);
+        byte exp { get; }
+        void addExp(byte total);
     }
     interface bodypartInterface
     {
-        public rating damage { get; }
-        public rating beauty { get; }
-        public void hurt();
-        public void heal(bool hospital = false);
+        rating damage { get; }
+        rating beauty { get; }
+        void hurt();
+        void heal(bool hospital = false);
     }
     interface WrestlerInterface
     {
-        public static bool init();
+        //string name { get; }
 
-        public string name { get; }
+        attribute getAttribute(string key);
+        experience getGeneralSkill(string key);
+        experience getWrestlingSkill(string key);
+        bodypart getBodyPart(string key);
 
-        public attribute getAttribute(string key);
-        public experience getGeneralSkill(string key);
-        public experience getWrestlingSkill(string key);
-        public bodypart getBodyPart(string key);
-
-        public void expGeneralSkill(string key, byte val);
-        public void expWrestlingSkill(string key, byte val);
+        void expGeneralSkill(string key, byte val);
+        void expWrestlingSkill(string key, byte val);
     }
 }

@@ -46,6 +46,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // maintext
@@ -55,74 +56,73 @@
             resources.ApplyResources(this.maintext, "maintext");
             this.maintext.Name = "maintext";
             this.maintext.ReadOnly = true;
-            this.maintext.TextChanged += new System.EventHandler(this.maintext_TextChanged);
             // 
             // menu1
             // 
-            this.menu1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu1.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu1, "menu1");
             this.menu1.Name = "menu1";
             this.menu1.UseVisualStyleBackColor = false;
             // 
             // menu2
             // 
-            this.menu2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu2.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu2, "menu2");
             this.menu2.Name = "menu2";
             this.menu2.UseVisualStyleBackColor = false;
             // 
             // menu3
             // 
-            this.menu3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu3.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu3, "menu3");
             this.menu3.Name = "menu3";
             this.menu3.UseVisualStyleBackColor = false;
             // 
             // menu4
             // 
-            this.menu4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu4.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu4, "menu4");
             this.menu4.Name = "menu4";
             this.menu4.UseVisualStyleBackColor = false;
             // 
             // menu5
             // 
-            this.menu5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu5.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu5, "menu5");
             this.menu5.Name = "menu5";
             this.menu5.UseVisualStyleBackColor = false;
             // 
             // menu6
             // 
-            this.menu6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu6.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu6, "menu6");
             this.menu6.Name = "menu6";
             this.menu6.UseVisualStyleBackColor = false;
             // 
             // menu7
             // 
-            this.menu7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu7.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu7, "menu7");
             this.menu7.Name = "menu7";
             this.menu7.UseVisualStyleBackColor = false;
             // 
             // menu8
             // 
-            this.menu8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu8.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu8, "menu8");
             this.menu8.Name = "menu8";
             this.menu8.UseVisualStyleBackColor = false;
             // 
             // menu9
             // 
-            this.menu9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu9.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu9, "menu9");
             this.menu9.Name = "menu9";
             this.menu9.UseVisualStyleBackColor = false;
             // 
             // menu10
             // 
-            this.menu10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.menu10.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.menu10, "menu10");
             this.menu10.Name = "menu10";
             this.menu10.UseVisualStyleBackColor = false;
@@ -169,11 +169,18 @@
             this.button6.Name = "button6";
             this.button6.UseVisualStyleBackColor = false;
             // 
+            // listBox1
+            // 
+            resources.ApplyResources(this.listBox1, "listBox1");
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Name = "listBox1";
+            // 
             // WFWF
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackColor = System.Drawing.Color.Coral;
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -217,6 +224,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
