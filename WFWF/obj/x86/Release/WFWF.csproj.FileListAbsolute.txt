@@ -4,3 +4,9 @@ C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\WFWF.Properties.Reso
 C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\WFWF.WFWF.en.resources
 C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\GenerateResource.read.1.tlog
 C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\bin\Release\WFWF.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\bin\Release\en\WFWF.resources.dll
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\en\WFWF.resources.dll
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\WFWF.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\bin\Release\WFWF.exe
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Release\WFWF.exe

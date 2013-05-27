@@ -1,0 +1,25 @@
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\bin\Debug\GameBuilder.exe
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\bin\Debug\GameBuilder.pdb
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\obj\x86\Debug\GameBuilder.Form1.resources
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\obj\x86\Debug\GameBuilder.Properties.Resources.resources
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\obj\x86\Debug\GameBuilder.exe
+C:\Users\salomao\AppData\Local\Temporary Projects\GameBuilder\obj\x86\Debug\GameBuilder.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.exe
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.Attributes.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.BodyParts.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.GeneralSkills.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.MainForm.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.Properties.Resources.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.WrestlingSkills.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Debug\GameBuilder.exe
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Debug\GameBuilder.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Debug\WFWF.exe
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Debug\WFWF.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Debug\en\WFWF.resources.dll
