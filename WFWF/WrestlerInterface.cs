@@ -8,9 +8,9 @@ namespace WFWF
     public enum rating { C = 1, B, A, S };
     interface modifierInterface
     {
-        string minAtt { get; }
-        string maxAtt { get; }
-        string[] skillMods { get; }
+        String minAtt { get; }
+        String maxAtt { get; }
+         String [] skillMods { get; }
     }
 
     interface attributeInterface
@@ -34,13 +34,13 @@ namespace WFWF
 
     interface WrestlerInterface
     {
-        Wrestler.attribute getAttribute(string key);
-        Wrestler.experience getGeneralSkill(string key);
-        Wrestler.experience getWrestlingSkill(string key);
-        Wrestler.bodypart getBodyPart(string key);
+        Wrestler.attribute getAttribute( String  key);
+        Wrestler.experience getGeneralSkill( String  key);
+        Wrestler.experience getWrestlingSkill( String  key);
+        Wrestler.bodypart getBodyPart( String  key);
 
-        void expGeneralSkill(string key, byte val);
-        void expWrestlingSkill(string key, byte val);
+        void expGeneralSkill( String  key, byte val);
+        void expWrestlingSkill( String  key, byte val);
     }
 
     /// <summary>
@@ -57,31 +57,31 @@ namespace WFWF
         /// the dictionaries keys in the other skills, as of now they don't
         /// need to hold information statically
         /// </remarks>
-        private static string[] genericAttributes;
+        private static String[] genericAttributes;
         /// <remarks>
         /// General skills are a dictionary, with the key being the name of the
         /// and the value being an attribute
         /// </remarks>
-        private static Dictionary<string, string> genericGeneralSkills;
+        private static Dictionary<String, String> genericGeneralSkills;
         /// <remarks>
         /// Contains all the static information for leveling up a skill, the
-        /// string key is the name of the skill, the modifier holds all the
+        /// String key is the name of the skill, the modifier holds all the
         /// experience modifier information
         /// </remarks>
-        private static Dictionary<string, modifier> genericWrestlingSkills;
+        private static Dictionary<String, modifier> genericWrestlingSkills;
         /// <remarks>
         /// An array that holds the dictionary values for the body parts,
         /// we don't need to hold any information statically as of yet
         /// </remarks>
-        private string[] genericBodyParts;
+        private  String [] genericBodyParts;
 
         /// <remarks>
         /// The personal skill and attribute dictionaries for wrestlers
         /// </remarks>
-        private Dictionary<string, attribute> __attributes;
-        private Dictionary<string, experience> __generalSkills;
-        private Dictionary<string, experience> __wrestlingSkills;
-        private Dictionary<string, bodypart> __bodyParts;
+        private Dictionary<String, attribute> __attributes;
+        private Dictionary<String, experience> __generalSkills;
+        private Dictionary<String, experience> __wrestlingSkills;
+        private Dictionary<String, bodypart> __bodyParts;
 
         private static bool isinit = false;
     }

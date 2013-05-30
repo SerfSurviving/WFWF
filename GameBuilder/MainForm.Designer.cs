@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.attributes = new System.Windows.Forms.Button();
-            this.gskills = new System.Windows.Forms.Button();
-            this.wskills = new System.Windows.Forms.Button();
-            this.bparts = new System.Windows.Forms.Button();
+            this.attributesButton = new System.Windows.Forms.Button();
+            this.gskillsButton = new System.Windows.Forms.Button();
+            this.wskillsButton = new System.Windows.Forms.Button();
+            this.bpartsButton = new System.Windows.Forms.Button();
             this.infobox = new System.Windows.Forms.TextBox();
             this.listthings = new System.Windows.Forms.ListBox();
             this.listlabel = new System.Windows.Forms.Label();
@@ -42,45 +42,45 @@
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // attributes
+            // attributesButton
             // 
-            this.attributes.Location = new System.Drawing.Point(9, 8);
-            this.attributes.Name = "attributes";
-            this.attributes.Size = new System.Drawing.Size(87, 25);
-            this.attributes.TabIndex = 0;
-            this.attributes.Text = "Attributes";
-            this.attributes.UseVisualStyleBackColor = true;
-            this.attributes.Click += new System.EventHandler(this.attributes_Click);
+            this.attributesButton.Location = new System.Drawing.Point(9, 8);
+            this.attributesButton.Name = "attributesButton";
+            this.attributesButton.Size = new System.Drawing.Size(87, 25);
+            this.attributesButton.TabIndex = 0;
+            this.attributesButton.Text = "Attributes";
+            this.attributesButton.UseVisualStyleBackColor = true;
+            this.attributesButton.Click += new System.EventHandler(this.attributes_Click);
             // 
-            // gskills
+            // gskillsButton
             // 
-            this.gskills.Location = new System.Drawing.Point(102, 8);
-            this.gskills.Name = "gskills";
-            this.gskills.Size = new System.Drawing.Size(87, 25);
-            this.gskills.TabIndex = 1;
-            this.gskills.Text = "G. Skills";
-            this.gskills.UseVisualStyleBackColor = true;
-            this.gskills.Click += new System.EventHandler(this.gskills_Click);
+            this.gskillsButton.Location = new System.Drawing.Point(102, 8);
+            this.gskillsButton.Name = "gskillsButton";
+            this.gskillsButton.Size = new System.Drawing.Size(87, 25);
+            this.gskillsButton.TabIndex = 1;
+            this.gskillsButton.Text = "G. Skills";
+            this.gskillsButton.UseVisualStyleBackColor = true;
+            this.gskillsButton.Click += new System.EventHandler(this.gskills_Click);
             // 
-            // wskills
+            // wskillsButton
             // 
-            this.wskills.Location = new System.Drawing.Point(195, 8);
-            this.wskills.Name = "wskills";
-            this.wskills.Size = new System.Drawing.Size(87, 25);
-            this.wskills.TabIndex = 2;
-            this.wskills.Text = "W. Skills";
-            this.wskills.UseVisualStyleBackColor = true;
-            this.wskills.Click += new System.EventHandler(this.wskills_Click);
+            this.wskillsButton.Location = new System.Drawing.Point(195, 8);
+            this.wskillsButton.Name = "wskillsButton";
+            this.wskillsButton.Size = new System.Drawing.Size(87, 25);
+            this.wskillsButton.TabIndex = 2;
+            this.wskillsButton.Text = "W. Skills";
+            this.wskillsButton.UseVisualStyleBackColor = true;
+            this.wskillsButton.Click += new System.EventHandler(this.wskills_Click);
             // 
-            // bparts
+            // bpartsButton
             // 
-            this.bparts.Location = new System.Drawing.Point(288, 8);
-            this.bparts.Name = "bparts";
-            this.bparts.Size = new System.Drawing.Size(87, 25);
-            this.bparts.TabIndex = 3;
-            this.bparts.Text = "B. Parts";
-            this.bparts.UseVisualStyleBackColor = true;
-            this.bparts.Click += new System.EventHandler(this.bparts_Click);
+            this.bpartsButton.Location = new System.Drawing.Point(288, 8);
+            this.bpartsButton.Name = "bpartsButton";
+            this.bpartsButton.Size = new System.Drawing.Size(87, 25);
+            this.bpartsButton.TabIndex = 3;
+            this.bpartsButton.Text = "B. Parts";
+            this.bpartsButton.UseVisualStyleBackColor = true;
+            this.bpartsButton.Click += new System.EventHandler(this.bparts_Click);
             // 
             // infobox
             // 
@@ -127,6 +127,7 @@
             this.edit.TabIndex = 8;
             this.edit.Text = "Edit";
             this.edit.UseVisualStyleBackColor = true;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
             // 
             // delete
             // 
@@ -158,10 +159,10 @@
             this.Controls.Add(this.listlabel);
             this.Controls.Add(this.listthings);
             this.Controls.Add(this.infobox);
-            this.Controls.Add(this.bparts);
-            this.Controls.Add(this.wskills);
-            this.Controls.Add(this.gskills);
-            this.Controls.Add(this.attributes);
+            this.Controls.Add(this.bpartsButton);
+            this.Controls.Add(this.wskillsButton);
+            this.Controls.Add(this.gskillsButton);
+            this.Controls.Add(this.attributesButton);
             this.Name = "MainForm";
             this.Text = "Game Maker";
             this.ResumeLayout(false);
@@ -171,10 +172,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button attributes;
-        private System.Windows.Forms.Button gskills;
-        private System.Windows.Forms.Button wskills;
-        private System.Windows.Forms.Button bparts;
+        private System.Windows.Forms.Button attributesButton;
+        private System.Windows.Forms.Button gskillsButton;
+        private System.Windows.Forms.Button wskillsButton;
+        private System.Windows.Forms.Button bpartsButton;
         private System.Windows.Forms.TextBox infobox;
         private System.Windows.Forms.ListBox listthings;
         private System.Windows.Forms.Label listlabel;

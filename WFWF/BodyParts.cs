@@ -79,7 +79,7 @@ namespace WFWF
                         chance *= 2;
                     }
 
-                    if (chance > rand.Next(100))
+                    if (chance > rand.Next(100) && __damage != rating.C)
                     {
                         __damage--;
                     }

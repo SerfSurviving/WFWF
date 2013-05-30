@@ -25,7 +25,7 @@ namespace WFWF
         /// <returns>
         /// Copy of the attribute belonging to the wrestler
         /// </returns>a
-        public attribute getAttribute(string key)
+        public attribute getAttribute( String  key)
         {
             bool hasKey = __attributes.ContainsKey(key);
             Trace.Assert(hasKey, String.Format(
@@ -45,7 +45,7 @@ namespace WFWF
         /// <returns>
         /// Copy of the general skills belonging to the wrestler
         /// </returns>
-        public experience getGeneralSkill(string key)
+        public experience getGeneralSkill( String  key)
         {
             bool hasKey = __generalSkills.ContainsKey(key);
             Trace.Assert(hasKey, String.Format(
@@ -65,7 +65,7 @@ namespace WFWF
         /// <returns>
         /// Copy of the wrestling skills belonging to the wrestler
         /// </returns>
-        public experience getWrestlingSkill(string key)
+        public experience getWrestlingSkill( String  key)
         {
             bool hasKey = __wrestlingSkills.ContainsKey(key);
             Trace.Assert(hasKey, String.Format(
@@ -85,7 +85,7 @@ namespace WFWF
         /// <returns>
         /// Copy of the body parts belonging to the wrestler
         /// </returns>
-        public bodypart getBodyPart(string key)
+        public bodypart getBodyPart( String  key)
         {
             bool hasKey = __wrestlingSkills.ContainsKey(key);
             Trace.Assert(hasKey, String.Format(
@@ -104,7 +104,7 @@ namespace WFWF
         /// the game is allowed to modify the experience and skills of the
         /// wrestler
         /// </summary>
-        public void expGeneralSkill(string name, byte experience)
+        public void expGeneralSkill( String  name, byte experience)
         {
             bool hasKey = __generalSkills.ContainsKey(name);
             Trace.Assert(hasKey, String.Format(
@@ -125,7 +125,7 @@ namespace WFWF
         /// the game is allowed to modify the experience and skills of the
         /// wrestler
         /// </summary>
-        public void expWrestlingSkill(string name, byte experience)
+        public void expWrestlingSkill( String  name, byte experience)
         {
             bool hasKey = __wrestlingSkills.ContainsKey(name);
             Trace.Assert(hasKey, String.Format(

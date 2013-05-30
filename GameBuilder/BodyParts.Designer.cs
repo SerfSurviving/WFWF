@@ -42,6 +42,7 @@
             this.cancel.TabIndex = 9;
             this.cancel.Text = "Cancel";
             this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // input
             // 
@@ -58,6 +59,7 @@
             this.sumbit.TabIndex = 7;
             this.sumbit.Text = "Submit";
             this.sumbit.UseVisualStyleBackColor = true;
+            this.sumbit.Click += new System.EventHandler(this.sumbit_Click);
             // 
             // name
             // 

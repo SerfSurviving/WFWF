@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.gensklist = new System.Windows.Forms.CheckedListBox();
+            this.attlist = new System.Windows.Forms.ListBox();
             this.cancel = new System.Windows.Forms.Button();
             this.sumbit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,21 +60,22 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "General Skills";
             // 
-            // checkedListBox1
+            // gensklist
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(221, 34);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(146, 244);
-            this.checkedListBox1.TabIndex = 4;
+            this.gensklist.FormattingEnabled = true;
+            this.gensklist.Location = new System.Drawing.Point(221, 34);
+            this.gensklist.Name = "gensklist";
+            this.gensklist.Size = new System.Drawing.Size(146, 244);
+            this.gensklist.TabIndex = 4;
             // 
-            // listBox1
+            // attlist
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 28);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(146, 251);
-            this.listBox1.TabIndex = 5;
+            this.attlist.FormattingEnabled = true;
+            this.attlist.Location = new System.Drawing.Point(12, 28);
+            this.attlist.Name = "attlist";
+            this.attlist.Size = new System.Drawing.Size(146, 251);
+            this.attlist.TabIndex = 5;
+            this.attlist.SelectedIndexChanged += new System.EventHandler(this.attlist_SelectedIndexChanged);
             // 
             // cancel
             // 
@@ -84,6 +85,7 @@
             this.cancel.TabIndex = 10;
             this.cancel.Text = "Cancel";
             this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // sumbit
             // 
@@ -93,6 +95,7 @@
             this.sumbit.TabIndex = 11;
             this.sumbit.Text = "Submit";
             this.sumbit.UseVisualStyleBackColor = true;
+            this.sumbit.Click += new System.EventHandler(this.sumbit_Click);
             // 
             // label2
             // 
@@ -155,10 +158,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.sumbit);
             this.Controls.Add(this.cancel);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.attlist);
+            this.Controls.Add(this.gensklist);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "WrestlingSkills";
             this.Text = "WrestlingSkills";
             this.ResumeLayout(false);
@@ -170,8 +175,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.CheckedListBox gensklist;
+        private System.Windows.Forms.ListBox attlist;
         private System.Windows.Forms.Button cancel;
         private System.Windows.Forms.Button sumbit;
         private System.Windows.Forms.Label label2;

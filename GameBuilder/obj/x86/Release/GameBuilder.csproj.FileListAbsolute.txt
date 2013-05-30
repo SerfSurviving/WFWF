@@ -1,0 +1,17 @@
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Release\GameBuilder.exe
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Release\GameBuilder.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Release\WFWF.exe
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Release\WFWF.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Release\en\WFWF.resources.dll
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.Attributes.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.BodyParts.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.GeneralSkills.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.MainForm.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.Properties.Resources.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.Warning.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.WrestlingSkills.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.exe
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.pdb
