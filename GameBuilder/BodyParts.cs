@@ -9,16 +9,27 @@ using System.Windows.Forms;
 
 namespace GameBuilder
 {
+    /// <summary>
+    /// Class used to determine body parts for the wrestlers
+    /// </summary>
     public partial class BodyParts : Form
     {
         MainForm main;
         int workingId;
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="mf"></param>
         public BodyParts(MainForm mf)
         {
             main = mf;
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Opens the window with an id for editing
+        /// </summary>
+        /// <param name="id"></param>
         public void openWindow(int id)
         {
             workingId = id;
@@ -26,6 +37,9 @@ namespace GameBuilder
             this.ShowDialog();
         }
 
+        /// <summary>
+        /// Opens the window without an id, so we add a new item
+        /// </summary>
         public void openWindow()
         {
             this.input.Text = "";
@@ -41,11 +55,21 @@ namespace GameBuilder
             this.ShowDialog();
         }
 
+        /// <summary>
+        /// Closes the screen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /// <summary>
+        /// Adds the new item after making sure that the form is filled
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void sumbit_Click(object sender, EventArgs e)
         {
             if (this.input.Text == "")

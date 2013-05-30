@@ -47,16 +47,16 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 26);
+            this.label1.Size = new System.Drawing.Size(271, 26);
             this.label1.TabIndex = 2;
             this.label1.Text = "Please remove any reference from this general skill from\r\nall wrestling skill bef" +
-                "ore trying to edit it or delete it.";
+                "ore trying to edit its name or delete it.";
             // 
             // Warning3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 70);
+            this.ClientSize = new System.Drawing.Size(292, 70);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);

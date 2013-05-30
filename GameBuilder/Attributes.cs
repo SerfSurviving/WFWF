@@ -10,6 +10,9 @@ using WFWF;
 
 namespace GameBuilder
 {
+    /// <summary>
+    /// This class is used for the attribute editing and adding form
+    /// </summary>
     public partial class Attributes : Form
     {
         MainForm main;
@@ -59,8 +62,16 @@ namespace GameBuilder
             this.Close();
         }
 
+        /// <summary>
+        /// Function called when the user clicks the submit button, it makes
+        /// sure any conditions required for validating this are met, then 
+        /// updates the form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void sumbit_Click(object sender, EventArgs e)
         {
+            // If the form is incomplete, display Warning
             if (this.input.Text == "")
             {
                 new Warning().ShowDialog();
@@ -68,12 +79,19 @@ namespace GameBuilder
 
             else
             {
-                if (this.edit /*&& this.usedInOther()*/)
+                // If we're editing the name of this attribute, but its being
+                // used in a general skill, display this
+                if (this.edit && this.usedInOther())
                 {
+                    new Warning2().ShowDialog();
                 }
-                else if(!this.edit && main.genericGeneralSkills.Count > 0)
+                // If that's not the case, but any number of generic wrestling
+                // exist, display warning1 
+                else if(!this.edit && main.genericWrestlingSkills.Count > 0)
                 {
+                    new Warning1().ShowDialog();
                 }
+                // Otherwise, validate the form and update the main variables
                 else
                 {
                     main.genericAttributes[workid] = (String)this.input.Text;
@@ -81,7 +99,28 @@ namespace GameBuilder
                     this.Close();
                 }
             }
+        }
+        /// <summary>
+        /// Checks to see if the attribuet exists in a general skill
+        /// </summary>
+        /// <returns>
+        /// Returns true if the attribute we're working with exists
+        /// a general skill
+        /// </returns>
+        private bool usedInOther()
+        {
+            bool retval = false;
 
+            String strToFind = main.genericAttributes[this.workid];
+            String[] keys = main.genericGeneralSkills.Keys.ToArray();
+            for (int i = 0; i < main.genericGeneralSkills.Count && !retval; i++)
+            {
+                if (main.genericGeneralSkills[keys[i]] == strToFind)
+                {
+                    retval = true;
+                }
+            }
+            return retval;
         }
     }
 }

@@ -10,8 +10,14 @@ using WFWF;
 
 namespace GameBuilder
 {
+    /// <summary>
+    /// Used to determine which part of the menu we are currently showing
+    /// </summary>
     public enum choice { attribute, general, wrestling, body };
 
+    /// <summary>
+    /// Main form for the game builder application
+    /// </summary>
     public partial class MainForm : Form
     {
         public String[] genericAttributes;
@@ -25,6 +31,9 @@ namespace GameBuilder
         GeneralSkills gnskWindow;
         WrestlingSkills wrskWindow;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public MainForm()
         {
             this.genericAttributes = new String[0];
@@ -42,6 +51,10 @@ namespace GameBuilder
             this.attributes_Click(new object(), new EventArgs());
         }
 
+        /// <summary>
+        /// Called after menus are changed in some way, it merely calls
+        /// the appropriate function to update everything
+        /// </summary>
         public void repopListThings()
         {
             if (this.formchoice == choice.attribute)
@@ -67,6 +80,12 @@ namespace GameBuilder
             
         }
 
+        /// <summary>
+        /// Displays all the attributes in the side menu, after clearing out
+        /// the items
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void attributes_Click(object sender, EventArgs e)
         {
             this.listthings.Items.Clear();
@@ -86,6 +105,12 @@ namespace GameBuilder
             this.wskillsButton.FlatStyle = FlatStyle.Standard;
         }
 
+        /// <summary>
+        /// Displays all the general skills in the side menu, after clearing out
+        /// the items
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void gskills_Click(object sender, EventArgs e)
         {
             this.listthings.Items.Clear();
@@ -105,6 +130,12 @@ namespace GameBuilder
             this.wskillsButton.FlatStyle = FlatStyle.Standard;
         }
 
+        /// <summary>
+        /// Displays all the wrestling skills in the side menu, after clearing out
+        /// the items
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void wskills_Click(object sender, EventArgs e)
         {
             this.listthings.Items.Clear();
@@ -124,6 +155,13 @@ namespace GameBuilder
             this.wskillsButton.FlatStyle = FlatStyle.Flat;
         }
 
+
+        /// <summary>
+        /// Displays all the body parts in the side menu, after clearing out
+        /// the items
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void bparts_Click(object sender, EventArgs e)
         {
             this.listthings.Items.Clear();
@@ -143,6 +181,12 @@ namespace GameBuilder
             this.wskillsButton.FlatStyle = FlatStyle.Standard;
         }
 
+        /// <summary>
+        /// Checks to see what menu we are on, then calls the appropriate function
+        /// for that menu, using the function meant to be used for adding new items
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void add_Click(object sender, EventArgs e)
         {
             if (this.formchoice == choice.attribute)
@@ -171,6 +215,13 @@ namespace GameBuilder
             }
         }
 
+
+        /// <summary>
+        /// Searches a string array for a value, and returns its index
+        /// </summary>
+        /// <param name="val">Value to search for</param>
+        /// <param name="list">String array to use</param>
+        /// <returns></returns>
         public int getID( String  val, ref  String [] list)
         {
             int retval = -1;
@@ -186,6 +237,12 @@ namespace GameBuilder
             return retval;
         }
 
+        /// <summary>
+        /// Figures out what menu we're in, then calls the appropriate
+        /// edit function for what is highlighted in listhtings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void edit_Click(object sender, EventArgs e)
         {
             if (this.listthings.Text == "")
