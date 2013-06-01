@@ -37,9 +37,9 @@ namespace WFWF
             }
 
             // Constructors
-            public bodypart(rating in_beauty = rating.B)
+            public bodypart(rating in_beauty = rating.D)
             {
-                __damage = rating.C;
+                __damage = rating.D;
                 __beauty = in_beauty;
             }
 
@@ -52,7 +52,7 @@ namespace WFWF
             /// </remarks>
             public void hurt()
             {
-                if (__damage != rating.S)
+                if (__damage != rating.A)
                 {
                     int chance = (100 - baseChance) * ((int)__damage - 1);
                     if (chance > rand.Next(100))
@@ -71,7 +71,7 @@ namespace WFWF
             /// </remarks>
             public void heal(bool hospital = false)
             {
-                if (__damage != rating.C)
+                if (__damage != rating.D)
                 {
                     int chance = baseChance / (int)__damage;
                     if (hospital)
@@ -79,7 +79,7 @@ namespace WFWF
                         chance *= 2;
                     }
 
-                    if (chance > rand.Next(100) && __damage != rating.C)
+                    if (chance > rand.Next(100) && __damage != rating.D)
                     {
                         __damage--;
                     }

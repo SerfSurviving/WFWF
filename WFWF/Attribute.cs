@@ -27,7 +27,7 @@ namespace WFWF
             }
 
             // Constructor
-            public attribute(rating attRating = rating.C)
+            public attribute(rating attRating = rating.D)
             {
                 __aptitude = attRating;
             }

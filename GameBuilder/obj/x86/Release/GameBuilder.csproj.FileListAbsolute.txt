@@ -15,3 +15,6 @@ C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GenerateResou
 C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.exe
 C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.Warning1.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.Warning2.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Release\GameBuilder.Warning3.resources

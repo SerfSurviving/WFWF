@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using WFWF;
 
+
 namespace GameBuilder
 {
     /// <summary>
@@ -18,6 +19,7 @@ namespace GameBuilder
     /// <summary>
     /// Main form for the game builder application
     /// </summary>
+    
     public partial class MainForm : Form
     {
         public String[] genericAttributes;
@@ -273,6 +275,11 @@ namespace GameBuilder
             {
                 throw new Exception("Somehow the mainform does not have a choice to use?");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new SaveLoad(this).ShowDialog();
         }
     }
 }

@@ -63,10 +63,11 @@
             // gensklist
             // 
             this.gensklist.FormattingEnabled = true;
-            this.gensklist.Location = new System.Drawing.Point(221, 34);
+            this.gensklist.Location = new System.Drawing.Point(221, 35);
             this.gensklist.Name = "gensklist";
             this.gensklist.Size = new System.Drawing.Size(146, 244);
             this.gensklist.TabIndex = 4;
+            this.gensklist.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.gensklist_OnItemCheck);
             // 
             // attlist
             // 
@@ -116,16 +117,20 @@
             // mintext
             // 
             this.mintext.Location = new System.Drawing.Point(173, 42);
+            this.mintext.MaxLength = 1;
             this.mintext.Name = "mintext";
             this.mintext.Size = new System.Drawing.Size(36, 20);
             this.mintext.TabIndex = 14;
+            this.mintext.TextChanged += new System.EventHandler(this.mintext_TextChanged);
             // 
             // maxtext
             // 
             this.maxtext.Location = new System.Drawing.Point(173, 81);
+            this.maxtext.MaxLength = 1;
             this.maxtext.Name = "maxtext";
             this.maxtext.Size = new System.Drawing.Size(36, 20);
             this.maxtext.TabIndex = 15;
+            this.maxtext.TextChanged += new System.EventHandler(this.maxtext_TextChanged);
             // 
             // label3
             // 
@@ -150,6 +155,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(451, 320);
+            this.ControlBox = false;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.maxtext);
@@ -162,6 +168,7 @@
             this.Controls.Add(this.gensklist);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "WrestlingSkills";

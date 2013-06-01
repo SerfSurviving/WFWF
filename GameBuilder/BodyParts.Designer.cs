@@ -75,10 +75,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(198, 92);
+            this.ControlBox = false;
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.input);
             this.Controls.Add(this.sumbit);
             this.Controls.Add(this.name);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "BodyParts";
             this.Text = "Body Parts";
             this.ResumeLayout(false);

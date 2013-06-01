@@ -146,12 +146,14 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "L";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(413, 236);
+            this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.edit);
@@ -163,6 +165,7 @@
             this.Controls.Add(this.wskillsButton);
             this.Controls.Add(this.gskillsButton);
             this.Controls.Add(this.attributesButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MainForm";
             this.Text = "Game Maker";
             this.ResumeLayout(false);

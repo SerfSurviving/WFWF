@@ -22,32 +22,31 @@ namespace WFWF
             private static String NOSKILL = "NOSK";
 
             // C# properties
-            private String __minAtt;
-            public String minAtt
+            private rating[] __minAtt;
+            public rating[] minAtt
             {
                 get
                 {
                     return __minAtt;
                 }
+                set
+                {
+                    __minAtt = value;
+                }
             }
 
-            internal void setMinAtt(String newStr)
-            {
-                __minAtt = newStr;
-            }
-
-            private String __maxAtt;
-            public String maxAtt
+            private rating[] __maxAtt;
+            public rating[] maxAtt
             {
                 get
                 {
                     return __maxAtt;
                 }
-            }
 
-            internal void setMaxAtt(String newStr)
-            {
-                __maxAtt = newStr;
+                set
+                {
+                    __maxAtt = value;
+                }
             }
 
             private String[] __skillMods;
@@ -57,16 +56,16 @@ namespace WFWF
                 {
                     return __skillMods;
                 }
-            }
 
-            internal void setSkillMod(String[] newStr)
-            {
-                __skillMods = newStr;
+                set
+                {
+                    __skillMods = value;
+                }
             }
 
             // Constructors
-            public modifier( String  in_minAtt, String in_maxAtt, 
-                 ref String [] in_skillMods)
+            public modifier(rating[] in_minAtt, rating[] in_maxAtt, 
+                 ref String[] in_skillMods)
             {
                 if (in_maxAtt == null || in_minAtt == null || in_skillMods == null)
                 {

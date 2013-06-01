@@ -5,12 +5,70 @@ using System.Text;
 
 namespace WFWF
 {
-    public enum rating { C = 1, B, A, S };
+    public enum rating { D = 1, C, B, A};
+    public static class ratingConvert
+    {
+        public static string ConvertToStr(rating rate)
+        {
+            if(rate == rating.D)
+            {
+                return "D";
+            }
+
+            else if(rate == rating.C)
+            {
+                return "C";
+            }
+
+            else if (rate == rating.B)
+            {
+                return "B";
+            }
+
+            else if (rate == rating.A)
+            {
+                return "A";
+            }
+
+            else
+            {
+                return "";
+            }
+        }
+
+        public static rating ConvertToRating (char rate)
+        {
+            if (rate == 'D')
+            {
+                return rating.D;
+            }
+
+            else if (rate == 'C')
+            {
+                return rating.C;
+            }
+
+            else if (rate == 'B')
+            {
+                return rating.B;
+            }
+
+            else if (rate == 'A')
+            {
+                return rating.A;
+            }
+
+            else
+            {
+                throw new Exception("This string isn't good for conversion");
+            }
+        }
+    }
     interface modifierInterface
     {
-        String minAtt { get; }
-        String maxAtt { get; }
-         String [] skillMods { get; }
+        rating[] minAtt { get; }
+        rating[] maxAtt { get; }
+        String [] skillMods { get; }
     }
 
     interface attributeInterface

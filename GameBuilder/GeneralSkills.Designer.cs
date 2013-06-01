@@ -104,6 +104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(193, 284);
+            this.ControlBox = false;
             this.Controls.Add(this.selectedatt);
             this.Controls.Add(this.attlist);
             this.Controls.Add(this.cancel);
@@ -111,6 +112,7 @@
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.sumbit);
             this.Controls.Add(this.name);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "GeneralSkills";
             this.Text = "General Skills";
             this.ResumeLayout(false);

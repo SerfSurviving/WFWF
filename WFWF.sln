@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFWF", "WFWF\WFWF.csproj", "{3A7B13DE-0F8C-411F-B76D-A0A0D46C8481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBuilder", "GameBuilder\GameBuilder.csproj", "{0C45D0D3-D671-42D1-804F-05CF9C07102D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticWrestlerBuilder", "GameBuilder\StaticWrestlerBuilder.csproj", "{0C45D0D3-D671-42D1-804F-05CF9C07102D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

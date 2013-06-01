@@ -24,3 +24,6 @@ C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Debug\WFWF.exe
 C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Debug\WFWF.pdb
 C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\bin\Debug\en\WFWF.resources.dll
 C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.Warning.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.Warning1.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.Warning2.resources
+C:\Users\salomao\Documents\GitHub\WFWF\GameBuilder\obj\x86\Debug\GameBuilder.Warning3.resources
