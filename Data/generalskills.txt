@@ -21,4 +21,3 @@ C:Outgoingness
 C:Acting
 C:Comedy
 C:Insults
-C:Foreign Language
