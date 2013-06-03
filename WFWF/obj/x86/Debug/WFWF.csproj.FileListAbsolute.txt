@@ -1,0 +1,14 @@
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\WFWF.Properties.Resources.resources
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\bin\Debug\WFWF.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\bin\Debug\en\WFWF.resources.dll
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\en\WFWF.resources.dll
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\WFWF.exe
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\WFWF.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\WFWFApp\obj\x86\Debug\WFWF.exe
+C:\Users\salomao\Documents\GitHub\WFWF\WFWFApp\obj\x86\Debug\WFWF.pdb
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\WFWF.WFWF.resources
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\obj\x86\Debug\WFWF.WFWF.en.resources
+C:\Users\salomao\Documents\GitHub\WFWF\WFWF\bin\Debug\WFWF.exe
