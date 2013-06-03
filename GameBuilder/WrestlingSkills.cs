@@ -74,11 +74,11 @@ namespace GameBuilder
 
             if (this.workingKey != "")
             {
-                foreach ( String  skill in this.workingMod.skillMods)
+                foreach ( string  skill in this.workingMod.skillMods)
                 {
                     for (int i = 0; i < gensklist.Items.Count; i++)
                     {
-                        if (skill == gensklist.Items[i])
+                        if (String.Equals(skill, gensklist.Items[i]))
                         {
                             this.gensklist.SetItemChecked(i, true);
                         }
@@ -173,7 +173,22 @@ namespace GameBuilder
             CheckedListBox sent = (CheckedListBox)sender;
             ItemCheckEventArgs args = (ItemCheckEventArgs)e;
             String[] newstrarr;
-            if (args.NewValue == CheckState.Checked)
+            if (this.workingMod.skillMods[0] == "\t")
+            {
+                newstrarr = new String[1];
+                newstrarr[0] = sent.Text; 
+                this.workingMod.skillMods = newstrarr;
+                return;
+            }
+            else if(args.NewValue == CheckState.Unchecked 
+                && this.workingMod.skillMods.Length == 1)
+            {
+                newstrarr = new String[1];
+                newstrarr[0] = "\t";
+                this.workingMod.skillMods = newstrarr;
+                return;
+            }
+            else if (args.NewValue == CheckState.Checked)
             {
                 newstrarr = new String[this.workingMod.skillMods.Length + 1];
                 newstrarr[this.workingMod.skillMods.Length] = sent.Text;
@@ -186,14 +201,22 @@ namespace GameBuilder
             int i = 0;
             foreach (string str in this.workingMod.skillMods)
             {
-                if (i != args.Index && args.NewValue != CheckState.Checked)
+                if (i == args.Index && args.NewValue == CheckState.Unchecked)
+                {
+                }
+                else
                 {
                     newstrarr[i] = str;
-                i++;
+                    i++;
                 }
             }
 
             this.workingMod.skillMods = newstrarr;
+        }
+
+        public void Delete(string str)
+        {
+            main.genericWrestlingSkills.Remove(str);
         }
     }
 }

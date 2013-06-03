@@ -83,5 +83,25 @@ namespace GameBuilder
                 this.Close();
             }
         }
+
+        public void Delete(int id)
+        {
+            String[] newArr = new String[main.genericBodyParts.Length - 1];
+            int offset = 0;
+            for (int i = 0; i < main.genericBodyParts.Length; i++)
+            {
+                if (i == id)
+                {
+                    offset = -1;
+                    continue;
+                }
+                else
+                {
+                    newArr[i + offset] = main.genericBodyParts[i];
+                }
+            }
+
+            main.genericBodyParts = newArr;
+        }
     }
 }

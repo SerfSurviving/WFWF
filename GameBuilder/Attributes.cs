@@ -45,9 +45,9 @@ namespace GameBuilder
         {
             this.edit = false;
             this.input.Text = "";
-             String [] newArr = new  String [main.genericAttributes.Length + 1];
+            String[] newArr = new String[main.genericAttributes.Length + 1];
             int n = 0;
-            foreach ( String  i in main.genericAttributes)
+            foreach (String i in main.genericAttributes)
             {
                 newArr[n] = i;
                 n++;
@@ -87,7 +87,7 @@ namespace GameBuilder
                 }
                 // If that's not the case, but any number of generic wrestling
                 // exist, display warning1 
-                else if(!this.edit && main.genericWrestlingSkills.Count > 0)
+                else if (!this.edit && main.genericWrestlingSkills.Count > 0)
                 {
                     new Warning1().ShowDialog();
                 }
@@ -121,6 +121,42 @@ namespace GameBuilder
                 }
             }
             return retval;
+        }
+
+        public void Delete(int id)
+        {
+            this.workid = id;
+            // If we're editing the name of this attribute, but its being
+            // used in a general skill, display this
+            if (this.edit && this.usedInOther())
+            {
+                new Warning2().ShowDialog();
+            }
+            // If that's not the case, but any number of generic wrestling
+            // exist, display warning1 
+            else if (!this.edit && main.genericWrestlingSkills.Count > 0)
+            {
+                new Warning1().ShowDialog();
+            }
+            else
+            {
+                String[] newArr = new String[main.genericAttributes.Length - 1];
+                int offset = 0;
+                for (int i = 0; i < main.genericAttributes.Length; i++)
+                {
+                    if (i == id)
+                    {
+                        offset = -1;
+                        continue;
+                    }
+                    else
+                    {
+                        newArr[i + offset] = main.genericAttributes[i];
+                    }
+                }
+
+                main.genericAttributes = newArr;
+            }
         }
     }
 }

@@ -281,5 +281,30 @@ namespace GameBuilder
         {
             new SaveLoad(this).ShowDialog();
         }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            if (this.formchoice == choice.attribute)
+            {
+                this.attWindow.Delete(this.listthings.SelectedIndex);
+            }
+
+            else if (this.formchoice == choice.body)
+            {
+                this.bdptWindow.Delete(this.listthings.SelectedIndex);
+            }
+
+            else if (this.formchoice == choice.general)
+            {
+                this.gnskWindow.Delete(this.listthings.Text);
+            }
+
+            else if (this.formchoice == choice.wrestling)
+            {
+                this.wrskWindow.Delete(this.listthings.Text);
+            }
+
+            this.repopListThings();
+        }
     }
 }

@@ -153,5 +153,18 @@ namespace GameBuilder
         {
             this.selectedatt.Text = this.attlist.Text;
         }
+
+        public void Delete(string str)
+        {
+            this.workingKey = str;
+            if(this.inWSkill())
+            {
+                new Warning3().ShowDialog();
+            }
+            else
+            {
+                main.genericGeneralSkills.Remove(str);
+            }
+        }
     }
 }
